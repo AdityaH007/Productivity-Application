@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_20"
+    tools:context=".home">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:background="@drawable/rndbtn"
+        android:text="Attendance manger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        android:id="@+id/atm"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dt"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:background="@drawable/rndbtn"
+        android:text="Daily task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/f"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:background="@drawable/rndbtn"
+        android:text="focus timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/abt"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:background="@drawable/rndbtn"
+        android:text="About And Bugs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

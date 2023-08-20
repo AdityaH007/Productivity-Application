@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_22">
+
+    <!-- Main content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Upper half: Add Attendance -->
+
+        <!-- Lower half: Display Attendance Stats and Chart -->
+
+        <Button
+            android:id="@+id/addAttendanceButton"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Add Attendance"
+            android:backgroundTint="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Display attendance statistics here -->
+
+            <!-- PieChart to display attendance distribution -->
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="date"
+                android:backgroundTint="@color/black"/>
+        </LinearLayout>
+
+        <!-- CalendarView to select date -->
+        <CalendarView
+            android:id="@+id/attendanceCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- Sliding content view -->
+    <LinearLayout
+        android:id="@+id/slidingView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <!-- Add your list of added dates using a ListView or any other appropriate view -->
+        <ListView
+            android:id="@+id/dateListView"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
